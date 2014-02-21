@@ -1,0 +1,11 @@
+{
+	"name": "hockey-today",
+	"description": "Pulls in today's hockey from nhl.com and other sources.",
+	"author": "Matt \"iWaffles\" Gardner",
+	"dependencies": {
+		"cheerio": "0.13.1",
+		"request":"2.34.0"
+	},
+	"engine": "node >= 0.8.18",
+	"version": "0.1.0"
+}
