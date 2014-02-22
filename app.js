@@ -2,8 +2,16 @@ var express = require('express');
 var app = express();
 var hockey = require('./hockey.js');
 
-app.get('/', function(req, res) {
-	res.send('hello world');
+app.get('/index.json', function(req, res) {
+	var games = hockey.fetchTodaysGames(function(data) {
+		res.json(data);
+	});
+});
+
+app.get('/index.html', function(req, res) {
+	var games = hockey.fetchTodaysGames(function(data) {
+		res.send(data);
+	});
 });
 
 app.listen(3000);
