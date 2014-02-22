@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Games today</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		body {
+			font-family: 'Open Sans', sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<h1>Today's Games</h1>
+	<% games.forEach(function(game) { %>
+		[<%= game.time %>] <%= game.home %> vs. <%= game.away %> :: <%= game.result %> <br />
+	<% }); %>
+</body>
+</html>
