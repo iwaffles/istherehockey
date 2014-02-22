@@ -2,6 +2,7 @@
 	"name": "hockey-today",
 	"description": "Pulls in today's hockey from nhl.com and other sources.",
 	"author": "Matt \"iWaffles\" Gardner",
+	"main":"app.js",
 	"dependencies": {
 		"cheerio": "0.13.1",
 		"request":"2.34.0",
