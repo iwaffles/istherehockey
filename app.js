@@ -13,7 +13,7 @@ app.get('/index.json', function(req, res) {
 	});
 });
 
-app.get('/index.html', function(req, res) {
+app.get('/:var(|index.html)', function(req, res) {
 	var games = hockey.fetchTodaysGames(function(data) {
 		res.render('index', {"games": data});
 	});
